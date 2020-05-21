@@ -1,0 +1,14 @@
+llama@DESKTOP-V7AAAGJ:~/week10$ touch ~/week1/file.txt
+llama@DESKTOP-V7AAAGJ:~/week10$ link ~/week1/file.txt _ex2.txt
+llama@DESKTOP-V7AAAGJ:~/week10$ ls -i _ex2.txt >> ex2.txt
+
+25895697857392949 _ex2.txt
+
+llama@DESKTOP-V7AAAGJ:~/week10$ find ~/week1/file.txt -inum 25895697857392949 >> ex2.txt
+
+/home/llama/week1/file.txt
+
+llama@DESKTOP-V7AAAGJ:~/week10$ find ~/week1/file.txt -inum 25895697857392949 -exec rm {} \;
+llama@DESKTOP-V7AAAGJ:~/week10$ find ~/week1/file.txt -inum 25895697857392949 > ex2.txt
+
+find: ‘/home/llama/week1/file.txt’: No such file or directory

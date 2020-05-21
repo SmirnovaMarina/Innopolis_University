@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+  24957	    736	    408	  26101	   65f5	example.exe

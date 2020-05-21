@@ -1,0 +1,6 @@
+Virtual address size = 16 bit
+Page size = 8 KB
+
+Firstly, calculate the offset for a virtual address: 8 KB = 2^13 B => 13 bits for the offset
+Secondly, calculate the amount of bits for page frame number: 16-13=3 bits
+Finally, calculate amount of page entries in PT: 2^3=8 entries 

@@ -1,0 +1,13 @@
+-rw-rw-rw- 1 llama llama 0 Oct 24 20:23 _ex3.txt
+-rwx-rw-rwx 1 llama llama 0 Oct 24 20:23 _ex3.txt
+-rwxrwxrwx 1 llama llama 0 Oct 24 20:23 _ex3.txt
+
+1. What does 660 mean for ex3.txt?
+Owner's and group's permissions: read and write, others are not allowed to do anything.
+
+2. What does 775 mean for ex3.txt?
+Owner's and group's permissions: read, write and execute. Others can read and execute.
+
+3. What does 660 mean for ex3.txt?
+Owner's, group's and other's permissions: read, write, execute.
+

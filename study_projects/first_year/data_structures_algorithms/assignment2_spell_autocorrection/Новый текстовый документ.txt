@@ -1,0 +1,19 @@
+Scanner scanner = new Scanner(System.in);
+        String word;
+        int counter = 0;
+        Pattern patternNewLine = Pattern.compile("\n|\r\n|$");
+        Pattern patternLetter = Pattern.compile("[a-z]+");
+        Pattern patternPunctuation = Pattern.compile("[^a-z&&[^\n]]+");
+        //System.out.println(scanner.hasNext(patternNewLine));
+
+        while(!scanner.hasNext(patternNewLine)) {
+            System.out.println(counter);
+            if (scanner.hasNext(patternLetter)) {
+                word = scanner.next(patternLetter);
+                System.out.println(word);
+            } else {
+
+                System.out.println(scanner.next(patternPunctuation));
+            }
+            counter += 1;
+        }

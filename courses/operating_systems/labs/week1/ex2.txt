@@ -1,0 +1,28 @@
+    1  pwd
+    2  ls
+    3  ls -all
+    4  sudo apt update
+    5  sudo apt upgrade
+    6  sudo apt install gcc
+    7  mkdir ~/week1
+    8  cd ~/week1
+    9  ls /usr/bin
+   10  ls /usr/bin | grep gcc | sort -r > ex1.txt
+   11  gedit
+   12  touch ex2.sh
+   13  gedit ex2.sh
+   14  sudo apt install gedit
+   15  gedit ex2.sh
+   16  ex2.sh
+   17  jobs
+   18  cat new.txt
+   19  cat > new.txt
+   20  cat man
+   21  man cat
+   22  man echo
+   23  echo > ex1.txt
+   24  touch new.txt
+   25  rm new.txt
+   26  rm ex2.sh
+   27  touch ex2.txt
+   28  history > ex2.txt

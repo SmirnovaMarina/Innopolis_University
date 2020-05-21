@@ -1,0 +1,15 @@
+To decrease hit/miss ratio:
+
+pf - number of page frames in PT;
+age_b - number of bits in age counter;
+The sequence of virtual addresses must contains:
+> non-repeated numbers (all distinct from any other);
+> the amount of addresses = pf*age_b (at least) => to update all page frames and have a miss on every address
+Then repeat the same procedure with the same addresses to again have misses.
+
+
+To increase hit/miss ratio:
+
+age_b - number of bits in age counter;
+The sequence must have such property that an address is referenced again just before becoming the minimum one => therefore, every age_b updates(other addreses).
+In case of page fault it is still necessary throw out a page with min age.

@@ -1,0 +1,7 @@
+6
+10.04.19 DSA_Read_Leacture 15
+10.04.19 DSA_Read_Tutorial 10
+10.04.19 DSA_Assigment 25
+12.04.19 DSA_Visist_Lab 20
+12.04.19 DSA_Do_Lab_Task 10
+DO 12.04.19

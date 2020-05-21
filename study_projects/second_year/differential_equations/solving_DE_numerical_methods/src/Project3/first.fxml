@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="680.0" minWidth="1004.0" prefHeight="680.0" prefWidth="1504.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project3.ControllerFXML">
+   <children>
+      <AnchorPane fx:id="chartSolContainer" layoutX="2.0" layoutY="10.0" prefHeight="550.0" prefWidth="500.0" />
+      <AnchorPane fx:id="chartErrContainer" layoutX="500.0" layoutY="10.0" prefHeight="550.0" prefWidth="500.0" />
+      <AnchorPane fx:id="bottomPanel" layoutX="2.0" layoutY="560.0" prefHeight="120.0" prefWidth="1000.0">
+         <children>
+            <Text layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Initial Values" />
+            <TextField layoutX="40.0" layoutY="42.0" minHeight="30.0" minWidth="40.0" prefHeight="30.0" prefWidth="60.0" fx:id="x0_field" />
+            <Text layoutX="10.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x0" />
+            <Text layoutX="10.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="y0" />
+            <TextField fx:id="y0_field" layoutX="40.0" layoutY="80.0" minHeight="30.0" minWidth="40.0" prefHeight="30.0" prefWidth="60.0" />
+            <Text layoutX="140.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x_n" />
+            <Text layoutX="140.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N" />
+            <TextField layoutX="170.0" layoutY="42.0" minHeight="30.0" minWidth="40.0" prefHeight="30.0" prefWidth="60.0" fx:id="x_n_field" />
+            <TextField fx:id="N_field" layoutX="170.0" layoutY="80.0" minHeight="30.0" minWidth="40.0" prefHeight="30.0" prefWidth="60.0" />
+            <Text layoutX="300.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Method" />
+            <ComboBox fx:id="comboMethod" layoutX="300.0" layoutY="42.0" minHeight="30.0" minWidth="130.0" prefHeight="30.0" prefWidth="150.0" />
+            <Button fx:id="buttonSolPlot" layoutX="300.0" layoutY="80.0" minHeight="31.0" minWidth="46.0" mnemonicParsing="false" onAction="#buildPlot" prefWidth="46.0" text="Plot" />
+            <Button fx:id="buttonSolFullScreen" layoutX="362.0" layoutY="80.0" minHeight="31.0" minWidth="88.0" mnemonicParsing="false" onAction="#buildFullScreenPlot" text="FullScreen" />
+            <Text layoutX="520.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calculate Local Error" />
+            <Button fx:id="buttonErrPlot" layoutX="520.0" layoutY="42.0" minHeight="31.0" minWidth="46.0" mnemonicParsing="false" onAction="#buildPlot" prefWidth="46.0" text="Plot" />
+            <Button fx:id="buttonErrFullScreen" layoutX="587.0" layoutY="42.0" minHeight="31.0" minWidth="88.0" mnemonicParsing="false" onAction="#buildFullScreenPlot" text="FullScreen" />
+            <Text layoutX="791.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calculate Global Error" />
+            <Button fx:id="buttonGlobal" layoutX="791.0" layoutY="42.0" mnemonicParsing="false" onAction="#buildPlot" text="Plot" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="globalContainer" layoutX="1000.0" layoutY="10.0" prefHeight="550.0" prefWidth="500.0" />
+   </children>
+</AnchorPane>
