@@ -491,8 +491,8 @@ public class Main {
     public static void main(String args[]){
 
         Main main = new Main();
-        //main.writeMisspellings(); //method for Task A
-        //main.suggestCorrections(); //method for Task B
+        main.writeMisspellings(); //method for Task A
+        main.suggestCorrections(); //method for Task B
 
     }
 
